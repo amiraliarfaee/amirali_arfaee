@@ -1,0 +1,250 @@
+body {
+    
+    overflow-x: hidden;
+}
+
+.above-navbar {
+    display: flex;
+    height: 30px;
+    ;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive !important;
+    background: radial-gradient(circle, rgb(53 113 158) 0%, rgb(242 244 255) 0%, rgb(78 255 100 / 95%) 100%);
+    transition: background-color 2s;
+}
+
+.above-navbar>div {
+    display: flex;
+    flex-basis: 90%;
+    justify-content: center;
+    padding-left: 10%;
+    font-weight: bold;
+}
+
+.above-navbar>div a {
+    text-decoration: none;
+    align-items: center;
+    padding-right: 1%;
+    font-weight: bold;
+}
+
+.above-navbar span {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.btn {
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background: #612192;
+    align-items: center;
+    font-size: larger;
+    height: 60px;
+}
+
+li {
+
+    padding: 0 3%;
+    text-align: center;
+    font-family: fantasy;
+    background: -webkit-linear-gradient(#19ff78, #537560);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul a:hover {
+    background: -webkit-linear-gradient(rgb(255 255 255), #0d9e40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:325px) {
+    ul {
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .above-navbar {
+        flex-direction: column;
+        height: 110px;
+        align-content: center;
+    }
+
+    .above-navbar>div {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+    }
+}
+
+.floating-text {
+    margin-top: -10px;
+    color: white;
+    -webkit-animation: moving 20s linear infinite, opa 20s infinite;
+
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.how-does-it-work {
+    background: rgb(127, 76, 181);
+    background: radial-gradient(circle, rgba(127, 76, 181, 1) 90%, rgba(179, 118, 207, 1) 100%, rgba(114, 9, 121, 1) 100%);
+    text-align: center;
+}
+
+.how-does-it-work h1::before {
+    content: "";
+    background-color: #7f4cb5;
+    position: absolute;
+    animation: invis 3s infinite;
+    padding-left: 100%;
+    height: 5rem;
+}
+
+.how-does-it-work img {
+    animation: moving2 3s infinite;
+}
+
+@keyframes invis {
+    from {
+        padding-left: 100%;
+    }
+
+    to {
+        padding-left: 0;
+    }
+
+}
+
+@keyframes moving2 {
+    from {
+        top: -2%;
+        right: -57%;
+    }
+
+    to {
+        top: -2%;
+        right: 57%;
+    }
+
+}
+
+@media screen and (max-width:910px) {
+    .amirali {
+        flex-direction: column;
+    }
+
+    .floating-text {
+        -webkit-animation: moving 10s linear infinite, opa 20s infinite;
+    }
+}
+.about-the-plan{
+    background: rgb(127, 76, 181);
+    background: radial-gradient(circle, rgba(127, 76, 181, 1) 90%, rgba(179, 118, 207, 1) 100%, rgba(114, 9, 121, 1) 100%);
+    text-align: center;
+
+}
+.about-the-plan h1::before {
+    content: "";
+    background-color: #7f4cb5;
+    position: absolute;
+    animation: invis 3s infinite;
+    padding-left: 100%;
+    height: 5rem;
+}
+.about-the-plan img {
+    animation: moving3 3s infinite;
+}
+@keyframes moving3 {
+    from {
+        top: -2%;
+        right: -60%;
+    }
+
+    to {
+        top: -2%;
+        right: 57%;
+    }
+}
+  /* styling the button*/
+ .amirali2 a {
+    
+    display: inline-block;
+    color: #008000!important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2em;
+    overflow: hidden;
+    cursor: pointer;
+     
+}
+
+footer {
+   background-color: #66de4d;
+}
+footer a {
+    color: #87508e;
+    text-decoration: none;
+}
+ a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+#lab_social_icon_footer {
+    padding: 40px 0;
+    background-color: #0bd848;
+  }
+  
+
+  #lab_social_icon_footer .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  #lab_social_icon_footer .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  /*
+      Multicoloured Hover Variations
+  */
+  
